@@ -1,8 +1,9 @@
 export interface LoginData {
   socketId: string;
-  status: 'pending' | 'scanned' | 'success' | 'expired';
+  status: 'pending' | 'scanned' | 'awaiting_2fa' | 'success' | 'expired';
   session?: string;
   userId?: string;
+  twoFaError?: string;
 }
 
 export interface UserSession {
